@@ -1,0 +1,11 @@
+<h1>User Details:</h1>
+Name:{{user.name}}<br>
+Email:{{user.email}}<br>
+Todos:
+<ul>
+    <li *ngFor="let item of user.todos">{{item}}</li>
+</ul>
+Posts:
+<ul>
+    <li *ngFor="let item of user.posts">{{item}}</li>
+</ul>

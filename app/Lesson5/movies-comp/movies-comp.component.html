@@ -1,0 +1,12 @@
+<button id="btn1" (click)="ShowAllMovies()">Show All Movies</button>
+<input type="text" #movieid>
+<button id="btn2" (click)="GetMovieData(movieid.value)">Get Movie Data</button>
+<h2>All The Movies</h2>
+<table border="1">
+    <tr *ngFor="let movie of movies">
+        <td>{{movie.name}}</td>
+    </tr>
+</table>
+<h2>Muvie's Data</h2> 
+<span>{{movie?.name}}</span>
+    

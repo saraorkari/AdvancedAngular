@@ -1,0 +1,24 @@
+<div style="width: 600px; border: solid 2px red;">
+    <h1>Edit User</h1>
+
+    Id:<input type="text" [(ngModel)]="user.id"><br>
+    First Name:<input type="text" [(ngModel)]="user.firstName"><br>
+    Last Name:<input type="text" [(ngModel)]="user.lastName"><br>
+    Age:<input type="text" [(ngModel)]="user.age"><br>
+
+    <button (click)="add()">Add</button><br>
+    <button (click)="update()">Update</button><br>
+    <button (click)="delete()">Delete</button><br>
+
+    <!-- שליחת משתנים בפונקציה
+    ID : <input type="text" #id><br />
+    First Name : <input type="text" #fname><br />
+    Last Name : <input type="text" #lname><br />
+    Age : <input type="text" #age><br />
+
+    <input type="button" value="Add" (click)="add(+id.value, fname.value, lname.value, +age.value)">
+    <input type="button" value="Update" (click)="update(+id.value, fname.value, lname.value, +age.value)">
+    <input type="button" value="Delete" (click)="delete(+id.value)"> -->
+
+    <app-all-users></app-all-users>
+</div>
